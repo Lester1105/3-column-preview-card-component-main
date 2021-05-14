@@ -1,0 +1,113 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+   --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+*{
+    padding:0%;
+    margin: 0%;
+    font-size: 15px;
+    height: 100vh;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 750px;
+    padding: 5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.main{
+   margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    overflow: hidden;
+}
+.all{
+    padding: 20px;
+    padding-bottom: 40px;
+    line-height: 1.3em;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+.first{
+ border-top-left-radius: 5%;
+    background-color: var(--Bright-orange);
+    border-bottom-left-radius:5% ;
+    
+}
+.second{
+    
+    background-color: var(--Dark-cyan);
+}
+.third{
+    
+    border-top-right-radius: 5%;
+ border-bottom-right-radius: 5%;
+    background-color: var(--Very-dark-cyan);
+}
+.icon{
+    margin-bottom: 10%;
+    width:50px;
+    height:40px;
+    
+}
+
+h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2.2em;
+    font-weight:700;
+    font-family: "Big Shoulders Display";
+}
+p{
+    line-height: 2em;
+    margin-top: 4%;
+    font-weight: 400;
+    font-family: "Lexend Deca";
+    margin-bottom: 3%;
+    opacity: 0.7;
+}
+button{
+    border-radius: 40px;
+    width:130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-family: "Lexend Deca";
+    font-size: 1.2em;
+    border-style: hidden;
+}
+@media only screen and (max-width:800px) {
+    body{
+        width: 300px;
+        height: 1500px;        
+    }
+    .main{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    .all{
+        height: 33%;
+    } 
+    .first{
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius:0% ;
+    }
+    .third{
+        border-top-right-radius:0%;
+        border-bottom-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+    }
+}
